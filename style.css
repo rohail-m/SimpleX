@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header-parent {
+  background-color: #21a5d5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #21a5d5;
+  padding: 10px 25px;
+}
+
+.h-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email,
+.location {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.e-text,
+.l-text {
+  color: white;
+}
+
+.h-right {
+  color: #6ec1e4;
+  font-size: 1.2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.twitter:hover,
+.facebook:hover,
+.linkedin:hover {
+  color: #00b6a1;
+}
+
+.twitter {
+  color: black;
+}
+
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1.3rem;
+  text-transform: capitalize;
+}
+
+.contactus {
+  border: none;
+  background-color: #21a5d5;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.arrow {
+  font-weight: bolder;
+}
+
+nav img:hover {
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  color: #21a5d5;
+  cursor: pointer;
+}
+
+.contactus:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.list2 {
+  display: none;
+}
+
+@media (max-width: 1711px) {
+  .header {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  nav {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+  }
+
+  nav {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav ul {
+    display: none;
+  }
+
+  .list1 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 2px solid rgb(28, 27, 27);
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 590px) {
+  .h-left {
+    display: none;
+  }
+
+  .contactus {
+    display: none;
+  }
+  .twitter {
+    color: #6ec1e4;
+  }
+
+  .list1 {
+    display: none;
+  }
+
+  .list2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 2px solid rgb(28, 27, 27);
+    border-radius: 5px;
+  }
+}
