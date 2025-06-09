@@ -154,6 +154,22 @@ nav ul li:hover {
   font-size: 2rem;
 }
 
+.our-cutomers {
+  padding: 4rem;
+  text-transform: capitalize;
+  width: 43%;
+}
+
+.our-cutomers p {
+  font-size: 1.3rem;
+  color: rgb(118, 114, 114);
+}
+
+.our-cutomers h2 {
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
 @media (max-width: 1711px) {
   .header {
     width: 80%;
@@ -196,12 +212,23 @@ nav ul li:hover {
   }
 }
 
+@media (max-width: 730px) {
+  .our-cutomers {
+    width: 50%;
+  }
+}
+
 @media (max-width: 700px) {
   .hero h1 {
     font-size: 1.5rem;
   }
 }
 
+@media (max-width: 630px) {
+  .our-cutomers h2 {
+    font-size: 2rem;
+  }
+}
 @media (max-width: 590px) {
   .h-left {
     display: none;
@@ -238,6 +265,13 @@ nav ul li:hover {
 
   .solution h2 {
     font-size: 1.5rem;
+  }
+
+  .our-cutomers {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    padding: 4rem 0;
   }
 }
 
