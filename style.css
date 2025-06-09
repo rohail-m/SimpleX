@@ -3,19 +3,24 @@
   margin: 0;
 }
 
+:root {
+  --primary-color: #21a5d5;
+  --logos-color: #6ec1e4;
+}
+
 body {
   font-family: sans-serif;
 }
 
 .header-parent {
-  background-color: #21a5d5;
+  background-color: var(--primary-color);
 }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #21a5d5;
+  background-color: var(--primary-color);
   padding: 10px 25px;
 }
 
@@ -40,7 +45,7 @@ body {
 }
 
 .h-right {
-  color: #6ec1e4;
+  color: var(--logos-color);
   font-size: 1.2rem;
   display: flex;
   gap: 1rem;
@@ -57,6 +62,10 @@ body {
 }
 
 /* nav */
+.nav-parent {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -73,9 +82,10 @@ nav ul {
   text-transform: capitalize;
 }
 
-.contactus {
+.contactus,
+.book-a-demo {
   border: none;
-  background-color: #21a5d5;
+  background-color: var(--primary-color);
   color: white;
   font-weight: bolder;
   padding: 15px 30px;
@@ -93,7 +103,7 @@ nav img:hover {
 }
 
 nav ul li:hover {
-  color: #21a5d5;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -105,6 +115,43 @@ nav ul li:hover {
 
 .list2 {
   display: none;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  margin: auto;
+  gap: 2rem;
+}
+
+.hero-left h1 {
+  margin: 1.3rem 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+.solution {
+  background-color: var(--primary-color);
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  padding: 4rem 0.8rem;
+}
+
+.s-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+.solution h2 {
+  font-size: 2rem;
 }
 
 @media (max-width: 1711px) {
@@ -149,6 +196,12 @@ nav ul li:hover {
   }
 }
 
+@media (max-width: 700px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 590px) {
   .h-left {
     display: none;
@@ -171,5 +224,29 @@ nav ul li:hover {
     font-weight: bolder;
     border: 2px solid rgb(28, 27, 27);
     border-radius: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .solution h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .s-cards {
+    flex-direction: column;
+  }
+
+  .solution {
+    padding: 3rem 0;
   }
 }
