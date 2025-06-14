@@ -317,6 +317,104 @@ nav ul li:hover {
   margin-bottom: 2rem;
 }
 
+/* operational-management */
+
+.operational-management {
+  background-color: var(--primary-color);
+  color: white;
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0% 100%);
+  padding: 1rem 0;
+}
+
+.operational-management h2 {
+  padding: 3rem 0;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 1.7rem;
+}
+
+.om-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.om-left,
+.om-right {
+  width: 100%;
+}
+
+.om-left p {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.om-left ol {
+  margin: 2rem auto;
+}
+
+.om-left h3 {
+  /* font-weight: lighter; */
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.om-btn {
+  border: none;
+  background-color: white;
+  color: var(--primary-color);
+  font-weight: bolder;
+  padding: 15px 30px;
+  text-transform: capitalize;
+  border-radius: 20px;
+  transition: all 0.4s;
+}
+
+.om-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.om-right {
+  transition: all 0.3s ease;
+}
+
+.om-right:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* trusted customer */
+.trusted-customer {
+  text-align: center;
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.trusted-customer h2 {
+  font-weight: lighter;
+  font-size: 1.6rem;
+  margin: 1.3rem auto;
+}
+
+.trusted-customer h3 {
+  font-weight: lighter;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tc-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
 @media (max-width: 1711px) {
   .header {
     width: 80%;
@@ -364,7 +462,9 @@ nav ul li:hover {
   .mobile-friendly,
   .m-left,
   .m-right,
-  .kiosk {
+  .kiosk,
+  .om-body,
+  .trusted-customer {
     width: 100%;
   }
 }
@@ -392,14 +492,23 @@ nav ul li:hover {
   }
 
   .mobile-friendly,
-  .kiosk {
+  .kiosk,
+  .om-body,
+  .tc-body {
     flex-direction: column;
     text-align: center;
     margin: auto;
   }
+  .tc-body {
+    width: 80%;
+  }
 
   .m-right {
     margin-top: -1px;
+  }
+
+  .operational-management {
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0% 100%);
   }
 }
 
