@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 :root {
@@ -9,8 +9,10 @@
   --logos-color: #6ec1e4;
 }
 
-body {
+body,
+html {
   font-family: sans-serif;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -677,6 +679,8 @@ nav ul li:hover {
   .blog .cards,
   .footer-body {
     width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -747,6 +751,11 @@ nav ul li:hover {
 @media (max-width: 630px) {
   .our-cutomers h2 {
     font-size: 2rem;
+  }
+
+  .footer-body {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
